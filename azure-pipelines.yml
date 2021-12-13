@@ -38,7 +38,6 @@ stages:
     - script: docker container ls
       displayName: Exibir containers em execução
     - script: |
-        mkdir $(testsDirectory)
         cd $(testsDirectory)
         wget https://github.com/grafana/xk6/releases/download/v0.5.0/xk6_0.5.0_linux_amd64.tar.gz
         tar -xvf xk6_0.5.0_linux_amd64.tar.gz
